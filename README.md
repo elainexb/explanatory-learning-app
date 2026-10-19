@@ -32,9 +32,14 @@ Git is optional for running a downloaded project folder. Node.js is not required
 
 ### 1. Get the application folder
 
-Download and extract the project ZIP, or obtain a Git checkout. This document does not assume a particular GitHub owner or repository URL. Open Terminal and enter the folder containing `server.py`, `seed.json`, and `Start.command`:
+Get the project from [elainexb/explanatory-learning-app](https://github.com/elainexb/explanatory-learning-app).
+
+**Without Git:** select **Code → Download ZIP** on GitHub, extract it, and open Terminal in the extracted folder containing `server.py`, `seed.json`, and `Start.command`.
+
+**With Git:**
 
 ```sh
+git clone https://github.com/elainexb/explanatory-learning-app.git
 cd explanatory-learning-app
 ```
 
