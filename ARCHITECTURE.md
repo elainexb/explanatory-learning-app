@@ -1,4 +1,4 @@
-# Architecture
+# Explanatory Learning App — Architecture
 
 ## Runtime
 

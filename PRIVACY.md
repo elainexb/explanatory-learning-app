@@ -1,4 +1,4 @@
-# Local Data and AI Boundaries
+# Explanatory Learning App — Local Data and AI Boundaries
 
 ## What the repository contains
 

@@ -1,4 +1,4 @@
-# Third-Party Notices
+# Explanatory Learning App — Third-Party Notices
 
 ## Cytoscape.js
 

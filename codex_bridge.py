@@ -96,7 +96,7 @@ def run_generation(prompt, schema, cancelled, progress, log_dir, image_paths=Non
                 except (ValueError,UnicodeDecodeError):continue
             events.put(None)
         threading.Thread(target=read,daemon=True).start()
-        receive(send('initialize',{'clientInfo':{'name':'local_card_learning','title':'Leaflet - Local Card Learning','version':'0.2'},'capabilities':{'experimentalApi':True}}))
+        receive(send('initialize',{'clientInfo':{'name':'explanatory_learning_app','title':'Explanatory Learning App (POC)','version':'0.2'},'capabilities':{'experimentalApi':True}}))
         proc.stdin.write(b'{"method":"initialized","params":{}}\n');proc.stdin.flush()
         account=receive(send('account/read',{'refreshToken':False})).get('account') or {}
         limits=receive(send('account/rateLimits/read',{}))

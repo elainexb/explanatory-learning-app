@@ -201,7 +201,7 @@ def make_server(store, port=8767, ai_service=None):
 
 
 def main():
-    parser = argparse.ArgumentParser(description='Local Card Learning POC')
+    parser = argparse.ArgumentParser(description='Explanatory Learning App (POC)')
     parser.add_argument('--port', type=int, default=8767)
     parser.add_argument('--db', type=Path, default=ROOT / 'data' / 'poc-library.sqlite3')
     parser.add_argument('--no-browser', action='store_true')
@@ -214,7 +214,7 @@ def main():
     except OSError as exc:
         raise SystemExit(f'Cannot start local page: {exc}. Check whether the port is already in use. Do not launch the program twice.')
     url = f'http://127.0.0.1:{server.server_port}/'
-    print(f'Card Learning POC started: {url}\nData file: {args.db}\nClose this window or press Control+C  to stop the server.', flush=True)
+    print(f'Explanatory Learning App (POC) started: {url}\nData file: {args.db}\nClose this window or press Control+C  to stop the server.', flush=True)
     if not args.no_browser:
         webbrowser.open(url)
     def interrupted(signum,frame):raise KeyboardInterrupt
