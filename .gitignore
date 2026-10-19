@@ -1,0 +1,37 @@
+# Release allowlist: new files remain untracked until explicitly reviewed.
+/*
+!/.gitignore
+!/README.md
+!/ARCHITECTURE.md
+!/PRIVACY.md
+!/THIRD_PARTY_NOTICES.md
+!/Start.command
+!/seed.json
+!/index.html
+!/learning-graph.js
+!/learning-graph.css
+!/codex_bridge.py
+!/conversation.py
+!/core.py
+!/generation.py
+!/generation_recovery.py
+!/learning_graph.py
+!/preferences.py
+!/references.py
+!/selection_edits.py
+!/server.py
+!/store.py
+!/topic_context.py
+!/vendor/
+/vendor/*
+!/vendor/cytoscape-3.34.3.min.js
+!/vendor/CYTOSCAPE-LICENSE
+# Local state, credentials, memory, study material and checks are never included.
+/data/
+/__pycache__/
+/.env*
+/.codex/
+/.venv/
+/test*
+/tests/
+/review/
